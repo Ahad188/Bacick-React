@@ -9,12 +9,12 @@ const Card = ({card}) => {
                <div className="author-info">
                     <img src={card.authorimg} alt="" />
                     <p>
-                    <h3>name:{card.name}</h3>
-                    <h4>Date:{card.date}</h4>
+                    <p>name:{card.name}</p>
+                    <p>Date:{card.date}</p>
                     </p>
                </div>
                <div>
-                    <h2>Minit: {card.time}</h2>
+                    <span>Minit: {card.time}</span>
                </div>
                </div>
                <h3>{card.title}</h3>
