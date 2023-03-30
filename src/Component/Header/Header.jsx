@@ -5,7 +5,7 @@ const Header = () => {
           <div className='header'>
                <nav className='navber'>
                     <a href="/">ForntEnd</a>
-                    <a href="/">ForntEnd</a>
+                     <img src="navphotho.jpg" alt="" />
                      
                </nav>
           </div>

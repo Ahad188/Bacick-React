@@ -1,20 +1,33 @@
- .header{
-     padding: 30px;
-     height: 80px;
-     width: 100wh;
- }
+ 
 .navber{
      display: flex;
      justify-content: space-between;
+     align-items: center;
      padding: 30px;
      border: 2px solid green;
-     background-color: aquamarine;
+     background-color: rgb(153, 224, 201);
 }
 .navber a{
-     font-size: 1.3rem;
+     font-size: 2.3rem;
+     color: black;
+     cursor: pointer;
+     text-decoration: none;
+}
+.navber img{
+     width: 80px;
+     height: 80px;
+     border-radius: 50px;
 }
 @media only screen and (max-width: 576px) {
-      .navber{
-          background-color: rgb(93, 73, 34);
-      }
+     .navber{
+          padding: 10px
+     }
+       .navber a{
+          font-size: 1rem;
+       }
+       .navber img{
+          width: 50px;
+          height: 50px;
+          border-radius: 50px;
+     }
    }    
