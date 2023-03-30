@@ -1,0 +1,20 @@
+ .header{
+     padding: 30px;
+     height: 80px;
+     width: 100wh;
+ }
+.navber{
+     display: flex;
+     justify-content: space-between;
+     padding: 30px;
+     border: 2px solid green;
+     background-color: aquamarine;
+}
+.navber a{
+     font-size: 1.3rem;
+}
+@media only screen and (max-width: 576px) {
+      .navber{
+          background-color: rgb(93, 73, 34);
+      }
+   }    
