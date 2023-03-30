@@ -5,8 +5,10 @@
      margin-top: 40px;
 }
 .left-side{
-     border: 2px solid gray;
-     height: 40px;
+     /* border: 2px solid gray; */
+     height: 100vh;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
 }
 .right-side{
      border: 2px solid red;
