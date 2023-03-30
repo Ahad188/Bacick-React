@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaBookmark } from "react-icons/fa";
 import './Card.css'
 const Card = ({card}) => {
      console.log(card)
@@ -14,7 +15,7 @@ const Card = ({card}) => {
                     </p>
                </div>
                <div>
-                    <span>Minit: {card.time}</span>
+                    <span>Minit: {card.time} <FaBookmark/></span>
                </div>
                </div>
                <h3>{card.title}</h3>
