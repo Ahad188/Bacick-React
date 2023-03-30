@@ -1,8 +1,8 @@
 import React from 'react';
 import { FaBookmark } from "react-icons/fa";
 import './Card.css'
-const Card = ({card}) => {
-     console.log(card)
+const Card = ({card,handelMinit}) => {
+     // console.log(card)
      return (
           <div className='cards'>
                <img src={card.img} alt="" />
@@ -19,7 +19,7 @@ const Card = ({card}) => {
                </div>
                </div>
                <h3>{card.title}</h3>
-               <a href="">Read More</a>
+               <button href="" onClick={()=>handelMinit(card.time)}>Read More</button>
           </div>
      );
 };
