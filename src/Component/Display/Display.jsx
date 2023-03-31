@@ -25,9 +25,10 @@ const Display = () => {
  }
 
 
-     const [book,setBook]=useState([])
+     const [book,setBook] = useState([]);
+
       const bookmark =(id)=>{
-          console.log(id)
+          // console.log(id)
           let Newbook =[];
           const previewsBook = JSON.parse(localStorage.getItem('Book'))
           if(previewsBook && previewsBook.length >0){

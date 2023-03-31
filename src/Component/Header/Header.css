@@ -4,8 +4,9 @@
      justify-content: space-between;
      align-items: center;
      padding: 30px;
-     border: 2px solid green;
-     background-color: rgb(153, 224, 201);
+      
+     box-shadow: 4px 4px 0px 0.9px rgb(244, 211, 211);
+     background-color: rgb(223, 249, 241);
 }
 .navber a{
      font-size: 2.3rem;

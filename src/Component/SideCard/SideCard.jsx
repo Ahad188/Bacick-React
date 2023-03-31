@@ -9,16 +9,24 @@ const SideCard = ({watchtiMe,book}) => {
           setShow(showtime)
      },[watchtiMe]);
 
-
+     const [p, setp] = useState(book)
+     useEffect(()=>{
+         const showD = JSON.parse(localStorage.getItem('Book'))
+         setp(showD)
+     },[book])
+     console.log(p)
      
      
      return (
           <div className='side-card'>
               <h3>Spent time on read :{show} min</h3> 
-               <h3>Bookmarked Blogs : {book}</h3>
-               {
-                    book.map(p=> console.log(p))
-               }
+               <h3>Bookmarked Blogs : {p.length}</h3>
+               <div>
+                    {
+                         p.map(s=><h4>{s}</h4>)
+                    }
+               </div>
+                
           </div>
      );
 };

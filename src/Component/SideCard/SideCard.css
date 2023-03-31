@@ -1,5 +1,5 @@
 .side-card{
-     border: 2px solid greenyellow;
+     box-shadow: 4px 4px 5px 0.9px gray;
      margin-top: 30px;
      padding: 30px;
 }
@@ -7,4 +7,10 @@
      color: brown;
      padding: 5px;
      border-bottom: 2px solid gray;
+}
+.side-card h4{
+      
+     background: lightcyan;
+     padding: 20px;
+     box-shadow: 4px 4px 5px 0.9px gray;
 }
