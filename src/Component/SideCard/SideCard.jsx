@@ -2,16 +2,16 @@ import React, { useEffect, useState } from 'react';
 import './SideCard.css'
 
 
-const SideCard = ({Time}) => {
-     const [min, setMin] = useState('Time');
+const SideCard = ({watchtiMe}) => {
+      const [show,setShow] =useState(watchtiMe)
      useEffect(()=>{
-          const showStoreg = localStorage.getItem('watch')
-          setMin(showStoreg)
-      },[Time])
+          const showtime = localStorage.getItem('watchTime')
+          setShow(showtime)
+     },[watchtiMe])
      
      return (
           <div>
-              <h3>Spent time on read : {min}min</h3> 
+              <h3>Spent time on read :{show} min</h3> 
           </div>
      );
 };

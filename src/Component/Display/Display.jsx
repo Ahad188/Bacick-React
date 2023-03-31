@@ -11,19 +11,19 @@ const Display = () => {
           .then(res=>res.json())
           .then(data => setData(data))
      },[]);
-     const [Time, setTime] = useState('');
-
-     const handelMinit =(min)=>{
-          const previesTime = JSON.parse(localStorage.getItem('watch'))
-          if(previesTime){
-               const sum = previesTime + min;
-               localStorage.setItem('watch',sum)
-               setTime(sum)
-          }else{
-               localStorage.setItem('watch',min)
-               setTime(min)
-          }
-     };
+    const [watchtiMe, setwatchtiMe] =useState('');
+ const handelMinit =(time)=>{
+      const previewsTime = JSON.parse(localStorage.getItem('watchTime'))
+      if(previewsTime){
+          const sum = previewsTime + time;
+          localStorage.setItem('watchTime',sum)
+          setwatchtiMe(sum)
+      }else{
+          localStorage.setItem('watchTime',time)
+          setwatchtiMe(time)
+      }
+ }
+      
 
 
 
@@ -32,11 +32,11 @@ const Display = () => {
           <div className='parent'>
               <div className="left-side">
                {
-                    Data.map(card=><Card card={card} key={card.id} handelMinit={handelMinit}></Card>)
+                    Data.map(card=><Card card={card} key={card.id} handelMinit={handelMinit} ></Card>)
                }
               </div>
               <div className="right-side">
-               <SideCard time={Time}></SideCard>
+               <SideCard watchtiMe={watchtiMe} ></SideCard>
               </div>
           </div>
      );
