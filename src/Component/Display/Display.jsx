@@ -40,7 +40,7 @@ const Display = () => {
           localStorage.setItem('Book',JSON.stringify(Newbook))
           
       }
-      console.log(book)
+     //  console.log(book)
 
 
 
