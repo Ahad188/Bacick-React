@@ -25,7 +25,7 @@ const SideCard = ({watchtiMe,book}) => {
                <div>
                      
                     {
-                         post.map(p=> <h4>{p}</h4>)
+                         post.map((pt,index)=> <h4 key={index}>{pt}</h4>)
                     }
                </div>
                 
