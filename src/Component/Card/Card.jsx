@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaBookmark } from "react-icons/fa";
 import './Card.css'
-const Card = ({card,handelMinit}) => {
+const Card = ({card,handelMinit,bookmark}) => {
      // console.log(card)
      return (
           <div className='cards'>
@@ -15,7 +15,7 @@ const Card = ({card,handelMinit}) => {
                     </p>
                </div>
                <div>
-                    <span>Minit: {card.time} <FaBookmark/></span>
+                    <span>Minit: {card.time} <FaBookmark onClick={()=>bookmark(card.title)}/></span>
                </div>
                </div>
                <h3>{card.title}</h3>
