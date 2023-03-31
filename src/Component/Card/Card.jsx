@@ -1,8 +1,12 @@
 import React from 'react';
 import { FaBookmark } from "react-icons/fa";
+import { ToastContainer, toast } from 'react-toastify';
 import './Card.css'
 const Card = ({card,handelMinit,bookmark}) => {
      // console.log(card)
+     const tostMsg=()=>{
+          toast(" Yes you got it!")
+     }
      return (
           <div className='cards'>
                <img src={card.img} alt="" />
@@ -10,7 +14,7 @@ const Card = ({card,handelMinit,bookmark}) => {
                <div className="author-info">
                     <img src={card.authorimg} alt="" />
                     <p>
-                    <p>name:{card.name}</p>
+                    <p>Name:{card.name}</p>
                     <p>Date:{card.date}</p>
                     </p>
                </div>
@@ -19,7 +23,10 @@ const Card = ({card,handelMinit,bookmark}) => {
                </div>
                </div>
                <h3>{card.title}</h3>
-               <button onClick={()=>handelMinit(card.time)}>Mark as read</button>
+               <button onClick={()=>{
+                    handelMinit(card.time)
+                    tostMsg()
+               }}>Mark as read</button>
           </div>
      );
 };

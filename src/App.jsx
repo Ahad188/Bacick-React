@@ -5,6 +5,8 @@ import './App.css'
 import Header from './Component/Header/Header'
 import Display from './Component/Display/Display'
 import Question from './Component/Question/Question'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
  
@@ -13,6 +15,7 @@ function App() {
       <Header/>
        <Display></Display>
       <Question/>
+      <ToastContainer></ToastContainer>
     </div>
   )
 }
