@@ -15,11 +15,11 @@ const Card = ({card,handelMinit,bookmark}) => {
                     </p>
                </div>
                <div>
-                    <span>Minit: {card.time} <FaBookmark title='Add to Book Mark' onClick={()=>bookmark(card.title)}/></span>
+                    <span>Minit: {card.time} <FaBookmark title='Add to Book Mark' onClick={()=>bookmark(card.title,card.id)} /></span>
                </div>
                </div>
                <h3>{card.title}</h3>
-               <button href="" onClick={()=>handelMinit(card.time)}>Read More</button>
+               <button onClick={()=>handelMinit(card.time)}>Mark as read</button>
           </div>
      );
 };

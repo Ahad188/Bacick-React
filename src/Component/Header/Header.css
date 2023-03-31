@@ -19,6 +19,9 @@
      height: 80px;
      border-radius: 50px;
 }
+span{
+     color: orange;
+}
 @media only screen and (max-width: 576px) {
      .navber{
           padding: 10px

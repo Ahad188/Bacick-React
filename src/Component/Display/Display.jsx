@@ -24,27 +24,22 @@ const Display = () => {
       }
  }
 
-
-     const [book,setBook] = useState([]);
-
-      const bookmark =(id)=>{
-          // console.log(id)
-          let Newbook =[];
-          const previewsBook = JSON.parse(localStorage.getItem('Book'))
-          if(previewsBook && previewsBook.length >0){
-                Newbook.push(...previewsBook,id)
-                setBook(Newbook)
-          }else{
-                Newbook.push(id)
-                setBook(id)
-          }
-          localStorage.setItem('Book',JSON.stringify(Newbook))
-          
-      }
-     //  console.log(book)
-
-
-
+     const [book, setBook] = useState([])
+ const bookmark =(title, id)=>{
+     console.log(title , id)
+     let NewBook = [];
+     const prevBook = JSON.parse(localStorage.getItem('Book'))
+     if(prevBook && prevBook.length >0){
+          NewBook.push(...prevBook,title)
+          setBook(NewBook)
+     }else{
+          NewBook.push(title)
+          setBook(title)
+     }
+     localStorage.setItem('Book',JSON.stringify(NewBook))
+ }
+    
+     
 
      return (
           <div className='parent'>
@@ -59,7 +54,7 @@ const Display = () => {
                }
               </div>
               <div className="right-side">
-               <SideCard watchtiMe={watchtiMe} book={book} ></SideCard>
+               <SideCard watchtiMe={watchtiMe} book={book}  ></SideCard>
               </div>
           </div>
      );
