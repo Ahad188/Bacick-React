@@ -1,0 +1,10 @@
+.side-card{
+     border: 2px solid greenyellow;
+     margin-top: 30px;
+     padding: 30px;
+}
+.side-card h3{
+     color: brown;
+     padding: 5px;
+     border-bottom: 2px solid gray;
+}

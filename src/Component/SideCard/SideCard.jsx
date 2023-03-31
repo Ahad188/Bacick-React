@@ -10,7 +10,7 @@ const SideCard = ({watchtiMe}) => {
      },[watchtiMe])
      
      return (
-          <div>
+          <div className='side-card'>
               <h3>Spent time on read :{show} min</h3> 
           </div>
      );
