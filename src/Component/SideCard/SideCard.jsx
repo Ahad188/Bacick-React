@@ -21,11 +21,11 @@ const SideCard = ({watchtiMe,book}) => {
      return (
           <div className='side-card'>
               <h3>Spent time on read :{show} min</h3> 
-               <h3>Bookmarked Blogs : {post.length}</h3>
+               <h3>Bookmarked Blogs : {post?.length}</h3>
                <div>
                      
                     {
-                         post.map((pt,index)=> <h4 key={index}>{pt}</h4>)
+                         post?.map((pt,index)=> <h4 key={index}>{pt}</h4>)
                     }
                </div>
                 
